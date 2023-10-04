@@ -17,7 +17,7 @@ Ans :<br>
 
 ## Que 2: Create a user in your localhost, which should not be able to execute the sudo command.
 Ans: <br>
-As we created a new user it dous not have sudo access by defult<br>
+As we created a new user it does not have sudo access by default<br>
 and to ensure it we can add that user to nosudo group and than that user not able to execute sudo command<br>
 we can add that user to nosudo group by using following command<br>
 ```sudo usermod -aG nosudo <username>```<br>
