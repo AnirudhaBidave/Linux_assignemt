@@ -9,7 +9,8 @@ Ans :<br>
 3rd step: After completion of installation we have to make changes in main.cf file present in path /etc/postfix/main.cf<br>
 	```sudo nano /etc/postfix/main.cf ```<br>
      	after this scroll down to bottom of file and change the line <br>
-      ```inet_interfaces = all``` to  ```inet_interfaces = loopback-only```<br><br>
+      ```inet_interfaces = all
+      inet_interfaces = loopback-only```<br><br>
 4th step: Is to install mailutils.<br>
 ```sudo apt install mailutils```<br><br>
 5th step: Send a mail using the following command<br>
