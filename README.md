@@ -20,5 +20,5 @@ Ans :<br>
 Ans: <br>
 As we created a new user it dous not have sudo access by defult<br>
 or to ensure it we can add that user to nosudo group and than that user not able to execute sudo command
-we can add that user to nosudo group by using following command
+we can add that user to nosudo group by using following command<br>
 ```sudo usermod -aG nosudo <username>```<br>
