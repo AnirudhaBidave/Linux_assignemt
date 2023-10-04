@@ -15,3 +15,10 @@ Ans :<br>
 ```sudo apt install mailutils```<br><br>
 5th step: Send a mail using the following command<br>
 ```echo 'Enter a mail body here' | mail -s 'enter a subject' resever@gmail.com```
+
+## Que 2: Create a user in your localhost, which should not be able to execute the sudo command.
+Ans: <br>
+As we created a new user it dous not have sudo access by defult<br>
+or to ensure it we can add that user to nosudo group and than that user not able to execute sudo command
+we can add that user to nosudo group by using following command
+```sudo usermod -aG nosudo <username>```<br>
