@@ -23,3 +23,5 @@ we can add that user to nosudo group by using following command<br>
 ```sudo usermod -aG nosudo <username>```<br>
 
 ## Que 3: Configure your system in such a way that when a user type and executes a describe command from anywhere of the system it must list all the files and folders of the user's current directory.
+Ans: <br>
+
