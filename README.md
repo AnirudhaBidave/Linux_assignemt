@@ -2,4 +2,7 @@
 ## Que 1: Configure smtp in localhos.
 Ans : 
 ist step: First we have to install postfix in our linux machine. To install command is
-	```syntax – sudo apt install postfix```
+	```sudo apt install postfix```
+2nd step: After that the installation will start and the postfix window will open. And we have to select some options on that window as followes
+	1. select internet site and enter tab and enter enter.
+	2. enter custom mall like ex: host.example.com
