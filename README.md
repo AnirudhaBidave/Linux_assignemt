@@ -12,6 +12,6 @@ Ans :<br>
      	after this scroll down to bottom of file and change the line <br>
       ```inet_interfaces = all``` to  ```inet_interfaces = loopback-only```
 4th step: Is to install mailutils.<br>
-```sudo apt install mailutils```
-5th step: Send a mail using the following command
+```sudo apt install mailutils```<br>
+5th step: Send a mail using the following command<br>
 ```echo 'Enter a mail body here' | mail -s 'enter a subject' resever@gmail.com```
