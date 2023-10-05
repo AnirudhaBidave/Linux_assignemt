@@ -31,6 +31,7 @@ There are two ways to achive this :<br>
   	    and write a shell script as follows
 ```bash
 #!/bin/bash
-ls -a```
-       Save this file and now describe command will work as desired.
+ls -a
+```
+Save this file and now describe command will work as desired.
        
