@@ -28,10 +28,9 @@ There are two ways to achive this :<br>
 	1 : In this we can add describe as aliase of ls command in .bashrc file as follows:<br>
  	``` alias describe = 'ls -a'```<br><br>
  	2 : In this we have to create a file named describe in specific path ```usr/local/bin```<br> 
-  	    and write a shell script as follows <br>
+  	    and write a shell script as follows
        ```bash
-       #!/bin/bash
-       ls -a
-       ```<br>
+       	#!/bin/bash
+       ls -a```
        Save this file and now describe command will work as desired.
        
