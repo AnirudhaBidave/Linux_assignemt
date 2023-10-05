@@ -33,7 +33,8 @@ There are two ways to achive this :<br>
 #!/bin/bash
 ls -a
 ```
-Save this file and now describe command will work as desired.
+
+Save this file and chabge the file permition ```chnod a+x describe ``` now describe command will work as desired.
 
 ## Que 4: Users can put a compressed file at any path of the linux file system. The name of the file will be research and the extension will be of compression type, 	example for gzip type extension will be .gz. You have to find the file and check the compression type and uncompress it.
 Ans: <br>
