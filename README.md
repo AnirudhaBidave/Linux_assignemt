@@ -34,4 +34,36 @@ There are two ways to achive this :<br>
 ls -a
 ```
 Save this file and now describe command will work as desired.
-       
+
+## Que 4: Users can put a compressed file at any path of the linux file system. The name of the file will be research and the extension will be of compression type, 	example for gzip type extension will be .gz. You have to find the file and check the compression type and uncompress it.
+Ans: <br>
+	In this I write a shell script name uncompressfile.sh and save it on desktop<br>
+ ```bash
+#!/bin/bash
+
+# Find all compressed research files
+files=$(find / -name "research.*" -type f 2>/dev/null)
+
+# Uncompress each file
+for file in $files; do
+    # Determine the compression type
+    compression_type=$(file $file | grep -Po "(?:gzip|bzip2|zip|xz)")
+
+    # Uncompress the file
+    case $compression_type in
+        "gzip")
+            gunzip $file
+            ;;
+        "bzip2")
+            bunzip2 $file
+            ;;
+        "zip")
+            unzip $file
+            ;;
+        "xz")
+            unxz $file
+            ;;
+    esac
+done
+```
+And exicute this file as ```./uncompressfile.sh``` after execution of this shell script it will find the fill name research, determine the compression type and uncompress the file.  
