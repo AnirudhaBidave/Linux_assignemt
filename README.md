@@ -29,8 +29,8 @@ There are two ways to achive this :<br>
  	``` alias describe = 'ls -a'```<br><br>
  	2 : In this we have to create a file named describe in specific path ```usr/local/bin```<br> 
   	    and write a shell script as follows
-       ```bash
-       	#!/bin/bash
-       ls -a```
+```bash
+#!/bin/bash
+ls -a```
        Save this file and now describe command will work as desired.
        
