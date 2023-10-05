@@ -102,12 +102,12 @@ done
 ```
 also create a showtime.log file to print current time at home directory `touch showtime.log`
 Now we have to enable the service <br>
-`sudo systemctl enable showtime.service`
+`sudo systemctl enable showtime.service`<br>
 Then change permitions of shell sript to executable <br>
-`chmod a+x showtime.sh`
+`chmod a+x showtime.sh`<br>
 Now we are ready to start the service <br>
-`sudo systemctl start showtime.servise`
+`sudo systemctl start showtime.servise`<br>
 To check status <br>
-`sudo systemctl status showtime.service`
+`sudo systemctl status showtime.service`<br>
 for stop the service<br>
-`sudo systemctl stop showtime.service`
+`sudo systemctl stop showtime.service`<br>
