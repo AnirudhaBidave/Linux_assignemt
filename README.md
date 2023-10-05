@@ -68,7 +68,7 @@ for file in $files; do
     esac
 done
 ```
-to execute this file first we have change permitions of this file using this command <br>
+to execute this file first we have change permission of this file using this command <br>
 ```chmod a+x uncompressfile.sh```<br>
 now we can execute this as  ```./uncompressfile.sh``` after execution of this shell script it will find the fill name research, determine the compression type and uncompress the file.  
 
@@ -90,7 +90,7 @@ ExecStart=/home/sigmoid/Desktop/showtime.sh
 [Install]
 WantedBy=multi-user.target
 ```
-Then craete a shell script at working directory mention in showtime.service file
+Then craete a shell script at working directory mentioned in showtime.service file
 ```bash
 #!/bin/bash
 
@@ -103,7 +103,7 @@ done
 also create a showtime.log file to print current time at home directory `touch showtime.log`
 Now we have to enable the service <br>
 `sudo systemctl enable showtime.service`<br>
-Then change permitions of shell sript to executable <br>
+Then change permission of shell sript to executable <br>
 `chmod a+x showtime.sh`<br>
 Now we are ready to start the service <br>
 `sudo systemctl start showtime.servise`<br>
