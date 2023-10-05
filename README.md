@@ -73,7 +73,7 @@ to execute this file first we have change permitions of this file using this com
 now we can execute this as  ```./uncompressfile.sh``` after execution of this shell script it will find the fill name research, determine the compression type and uncompress the file.  
 
 ## Que 5: Configure your system in such a way that any user of your system creates a file then there should not be permission to do any activity in that file. Note:- Don’t use the chmod command.
-Ans: 
+Ans: <br>
 For this we can add umask value to bash.bashrc file as ``` umask 0777```
 
 ## Que 6: Create a service with the name showtime , after starting the service, every minute it should print the current time in a file in the user home directory.
