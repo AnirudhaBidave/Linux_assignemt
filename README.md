@@ -24,4 +24,14 @@ we can add that user to nosudo group by using following command<br>
 
 ## Que 3: Configure your system in such a way that when a user type and executes a describe command from anywhere of the system it must list all the files and folders of the user's current directory.
 Ans: <br>
-
+There are two ways to achive this :<br>
+	1 : In this we can add describe as aliase of ls command in .bashrc file as follows:<br>
+ 	``` alias describe = 'ls -a'```<br><br>
+ 	2 : In this we have to create a file named describe in specific path ```usr/local/bin```<br> 
+  	    and write a shell script as follows 
+       ```bash
+       #!/bin/bash
+       ls -a
+       ```<br>
+       Save this file and now describe command will work as desired.
+       
