@@ -71,3 +71,43 @@ done
 to execute this file first we have change permitions of this file using this command <br>
 ```chmod a+x uncompressfile.sh```<br>
 now we can execute this as  ```./uncompressfile.sh``` after execution of this shell script it will find the fill name research, determine the compression type and uncompress the file.  
+
+## Que 5: Configure your system in such a way that any user of your system creates a file then there should not be permission to do any activity in that file. Note:- Don’t use the chmod command.
+Ans: 
+For this we can add umask value to bash.bashrc file as ``` umask 0777```
+
+## Que 6: Create a service with the name showtime , after starting the service, every minute it should print the current time in a file in the user home directory.
+Ans: <br>
+Create a service as `showtime.service` in path `/etc/systemd/system`
+```bash
+[Unit]
+Description=Linux Assignment
+
+[Service]
+WorkingDirectory=/home/sigmoid/Desktop/
+ExecStart=/home/sigmoid/Desktop/showtime.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+Then craete a shell script at working directory mention in showtime.service file
+```bash
+#!/bin/bash
+
+while true;
+do
+	echo $(date) >> /home/sigmoid/showtime.log
+	sleep 60
+done
+```
+also create a showtime.log file to print current time at home directory `touch showtime.log`
+Now we have to enable the service <br>
+`sudo systemctl enable showtime.service`
+Then change permitions of shell sript to executable <br>
+`chmod a+x showtime.sh`
+Now we are ready to start the service <br>
+`sudo systemctl start showtime.servise`
+To check status <br>
+`sudo systemctl status showtime.service`
+for stop the service<br>
+`sudo systemctl stop showtime.service`
