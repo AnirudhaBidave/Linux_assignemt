@@ -38,6 +38,7 @@ Save this file and now describe command will work as desired.
 ## Que 4: Users can put a compressed file at any path of the linux file system. The name of the file will be research and the extension will be of compression type, 	example for gzip type extension will be .gz. You have to find the file and check the compression type and uncompress it.
 Ans: <br>
 	In this I write a shell script name uncompressfile.sh and save it on desktop<br>
+ 	```nano /home/sigmoid/Desktop uncompressfile.sh```
  ```bash
 #!/bin/bash
 
