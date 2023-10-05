@@ -66,4 +66,6 @@ for file in $files; do
     esac
 done
 ```
-And exicute this file as ```./uncompressfile.sh``` after execution of this shell script it will find the fill name research, determine the compression type and uncompress the file.  
+to execute this file first we have change permitions of this file using this command <br>
+```chmod a+x uncompressfile.sh```<br>
+now we can execute this as  ```./uncompressfile.sh``` after execution of this shell script it will find the fill name research, determine the compression type and uncompress the file.  
