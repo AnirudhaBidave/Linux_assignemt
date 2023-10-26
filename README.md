@@ -26,7 +26,7 @@ we can add that user to nosudo group by using following command<br>
 ```sudo visudo```<br>
 2. Find the line look like <br>
 ```%sudo   ALL=(ALL:ALL) ALL```<br>
-3. Add the user below that line
+3. Add the user below that line<br>
 ```username ALL=(ALL:ALL) ALL```
 
 ## Que 3: Configure your system in such a way that when a user type and executes a describe command from anywhere of the system it must list all the files and folders of the user's current directory.
