@@ -21,6 +21,13 @@ As we created a new user it does not have sudo access by default<br>
 and to ensure it we can add that user to nosudo group and than that user not able to execute sudo command<br>
 we can add that user to nosudo group by using following command<br>
 ```sudo usermod -aG nosudo <username>```<br>
+### And to give sudo permition to user we can add user to sudoers file
+1. To open sudoer file <br>
+```sudo visudo```<br>
+2. Find the line look like <br>
+```%sudo   ALL=(ALL:ALL) ALL```<br>
+3. Add the user below that line
+```username ALL=(ALL:ALL) ALL```
 
 ## Que 3: Configure your system in such a way that when a user type and executes a describe command from anywhere of the system it must list all the files and folders of the user's current directory.
 Ans: <br>
