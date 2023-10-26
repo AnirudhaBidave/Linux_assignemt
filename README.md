@@ -71,7 +71,8 @@ done
 to execute this file first we have change permission of this file using this command <br>
 ```chmod a+x uncompressfile.sh```<br>
 now we can execute this as  ```./uncompressfile.sh``` after execution of this shell script it will find the fill name research, determine the compression type and uncompress the file.  
-###Or did this same in a singal command if the compression type is gzip
+
+##Or did this same in a singal command if the compression type is gzip<br>
 ```find . -name "research.*" -exec sh -c 'gunzip -d "{}"' \; 2>/dev/null```
 
 ## Que 5: Configure your system in such a way that any user of your system creates a file then there should not be permission to do any activity in that file. Note:- Don’t use the chmod command.
